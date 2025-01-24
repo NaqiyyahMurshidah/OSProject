@@ -333,16 +333,24 @@ Linux codespaces-21f3fd 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33
 ```
 
 11. What is the available free memory in the system. ***(1 mark)*** 
-__Fill answer here__.
+__free memory available can be check using command **free -h**. The free available memory is 279Mi__.
 
 12. What is the available disk space mounted on /workspace. ***(1 mark)***
- __Fill answer here__.
+ __The available disk can be know by using command **df**.The available disk space mounted on /workspace is 20,447,272 KB (approximately 20.4 GB)__.
  
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
+ __The version and hardware architecture of the linux can be check using command **uname -a**. The version of the linux is Linux codespaces-21f3fd 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33:04 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
+
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __**ls** is to lists all files in current directory. **ls -asl** is to lists all files including the hidden files in a long format with size__.
+
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+__The TLB size is 2560 4K pages for each processor__.
+
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+__The info of the CPU speed can get by command **cat /proc/cpuinfo**. the CPU speed is 3240.670 MHz (processor 0) and 3240.957 (processor 1)__.
+
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+__To find the top running process can be know by using command **top**.The top running process is node with PID 15660, using 1.7% CPU and 4.0% memory. A second node process (PID 2610) is also running, using 1.3% CPU and 4.2% memory.__.
 
 ## Running your own container instance.
 
