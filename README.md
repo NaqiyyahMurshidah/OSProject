@@ -333,24 +333,25 @@ Linux codespaces-21f3fd 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33
 ```
 
 11. What is the available free memory in the system. ***(1 mark)*** 
-__free memory available can be check using command **free -h**. The free available memory is 279Mi__.
+__free memory available can be check using command ```free -h```. The free available memory is 279Mi__.
 
 12. What is the available disk space mounted on /workspace. ***(1 mark)***
- __The available disk can be know by using command **df**.The available disk space mounted on /workspace is 20,447,272 KB (approximately 20.4 GB)__.
+ __The available disk can be know by using command ```df```.The available disk space mounted on /workspace is 20,447,272 KB (approximately 20.4 GB)__.
  
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
- __The version and hardware architecture of the linux can be check using command **uname -a**. The version of the linux is Linux codespaces-21f3fd 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33:04 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
+ __The version and hardware architecture of the linux can be check using command ```uname -a```. The version of the linux is Linux codespaces-21f3fd 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33:04 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
 
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __**ls** is to lists all files in current directory. **ls -asl** is to lists all files including the hidden files in a long format with size__.
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** <br>
+__```ls``` is to lists all files in current directory. ```ls -asl``` is to lists all files including the hidden files in a long format with size__.
 
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** <br>
 __The TLB size is 2560 4K pages for each processor__.
 
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
-__The info of the CPU speed can get by command **cat /proc/cpuinfo**. the CPU speed is 3240.670 MHz (processor 0) and 3240.957 (processor 1)__.
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** <br>
+__The info of the CPU speed can get by command ```cat /proc/cpuinfo```. the CPU speed is 3240.670 MHz (processor 0) and 3240.957 (processor 1)__.
 
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
-__To find the top running process can be know by using command **top**.The top running process is node with PID 15660, using 1.7% CPU and 4.0% memory. A second node process (PID 2610) is also running, using 1.3% CPU and 4.2% memory.__.
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** <br>
+__To find the top running process can be know by using command ```top```.The top running process is node with PID 15660, using 1.7% CPU and 4.0% memory. A second node process (PID 2610) is also running, using 1.3% CPU and 4.2% memory.__.
 
 ## Running your own container instance.
 
@@ -414,7 +415,7 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
  __Files in the container is not persistent because the containers are designedd to be ephemeral by default.<br> When the container is stop and removed, all data inside the container is deleted.__.
 
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** <br>
-__Yes, we can run multiple instances of debian linux using command ```bash docker run```__.
+__Yes, we can run multiple instances of debian linux using command ```docker run```__.
 
 ## Running your own container with persistent storage
 
@@ -433,14 +434,19 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
-2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** ,<br>
+__The User is root and the group is root because the container runs as the root user by default__.
+
+2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***<br>
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+*** __Answer: __.***
+```bash
+@NaqiyyahMurshidah ➜ /workspaces/OSProject/myroot (main) $ sudo chown -R codespace:codespace /workspaces/OSProject/myroot
+```
 
 ## You are on your own, create your own static webpage
 
