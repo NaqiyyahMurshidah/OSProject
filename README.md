@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/985a5e12-5511-4165-9c43-1b0376a10f4f)# OSProject Running Containers for Application Development
+OSProject Running Containers for Application Development
 
 Group Name: __Group N__. 
 
