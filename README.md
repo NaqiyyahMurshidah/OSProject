@@ -410,8 +410,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)***
- __Files in the container is not persistent because the containers are designedd to be ephemeral by default.\n When the container is stop and removed, all data inside the container is deleted.__.
+1. Are files in the container persistent. Why not?. ***(1 mark)***<br>
+ __Files in the container is not persistent because the containers are designedd to be ephemeral by default.<br> When the container is stop and removed, all data inside the container is deleted.__.
 
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
 
