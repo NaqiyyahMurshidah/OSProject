@@ -537,7 +537,7 @@ PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.160 ms
 64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.144 ms
 ```
-2. What is different from the previous ping in the section above? ***(1 mark)*** __The previous ping shows that the ping is failed because they are on separate networks which is bluenet and rednet. After bridging, the ping is succeed because bridgenet provides a shared network that allows communication between containers.__.
+2. What is different from the previous ping in the section above? ***(1 mark)*** __The previous ping shows that the ping is failed because they are on separate networks which is bluenet and rednet. After bridging, the ping is succeed because bridgenet provides a shared network that allows communication between containers.__
 
 ## Intermediate Level (10 marks bonus)
 
