@@ -680,8 +680,14 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** 
+
+__The expected output of the curl http://localhost:3000/random command should be JSON response with a random row from the test_table in the MySQL database as such[{"id":1,"value":"Hello, Docker!"}] and this mean the Node.js application encountered an issue when retrieving data from the MySQL database__.
+
+2. Show the instruction needed to make this work. ***(1 mark)***
+
+ __First check if the intended database in mysql container exists, then ensure if mytable exists in the the database and make sure the table is populated, when done verify the populated table. Secondly, verify the network bridging by connecting Node.js and MySQL to each other then test the connectivity. Lastly, check if the index.js file in Node.js has the correct query. After that rebuild the docker and restart the container. Test the curl command again and the expected output should be a random row from mytable.__.
+
 
 
 
